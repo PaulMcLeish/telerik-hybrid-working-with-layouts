@@ -13,9 +13,11 @@
         schema: {
             data: "books"
         }
-    }),
+        }),
+        
         back: function() {
         },
+        
         settings: function() {
         }
     };
@@ -23,7 +25,7 @@
     document.addEventListener("deviceready", function () {  
         navigator.splashscreen.hide();
 
-        app = new kendo.mobile.Application(document.body);
+        app = new kendo.mobile.Application(document.body, { layout: "main-layout" });
     }, false);
 
     window.app = app;
